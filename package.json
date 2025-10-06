@@ -1,0 +1,68 @@
+{
+  "name": "@spyglasses/nuxt",
+  "version": "0.1.0",
+  "description": "AI SEO, bot detection, and blocking server middleware for Nuxt (Nitro)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "version": "changeset version",
+    "release": "npm run build && npm publish --access public",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "nuxt",
+    "nitro",
+    "server-middleware",
+    "AI SEO",
+    "AI Analytics",
+    "AI Agent Detection",
+    "AI Model Blocking",
+    "AI Referrer Tracking",
+    "AI Crawler Detection",
+    "AI Bot Detection",
+    "ai",
+    "bot",
+    "detection",
+    "blocking",
+    "chatgpt",
+    "claude",
+    "gptbot"
+  ],
+  "author": "Spyglasses <hello@spyglasses.io>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orchestra-code/spyglasses-nuxt.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@spyglasses/sdk": "^1.0.3"
+  },
+  "peerDependencies": {
+    "nuxt": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.28.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@types/node": "^22.14.0",
+    "h3": "^1.13.0",
+    "typescript": "^5.6.3",
+    "vitest": "^3.2.3"
+  }
+}
+

@@ -1,6 +1,6 @@
 {
   "name": "@spyglasses/nuxt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AI SEO, bot detection, and blocking server middleware for Nuxt (Nitro)",
   "keywords": [
     "nuxt",

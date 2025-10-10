@@ -170,7 +170,7 @@ export function createSpyglassesMiddleware(config: SpyglassesConfig = {}): Spygl
         responseStatus: 200
       });
 
-      logPromise.catch((err) => {
+      logPromise.catch((err: unknown) => {
         if (debugMode) console.error('Spyglasses(Nuxt): Error logging visit:', err);
       });
     }
